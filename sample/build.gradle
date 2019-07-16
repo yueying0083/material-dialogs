@@ -1,4 +1,4 @@
-apply from: '../gradle/dependencies.gradle'
+apply from: '../dependencies.gradle'
 
 buildscript {
     repositories {
@@ -39,9 +39,9 @@ dependencies {
     implementation project(':commons')
     implementation 'com.google.code.findbugs:jsr305:' + versions.findBugs
 
-    implementation 'com.android.support:gridlayout-v7:' + versions.supportLib
-    implementation 'com.android.support:appcompat-v7:' + versions.supportLib
-    implementation 'com.android.support:recyclerview-v7:' + versions.supportLib
+    implementation 'androidx.gridlayout:gridlayout:' + versions.gridlayout
+    implementation 'androidx.appcompat:appcompat:' + versions.appcompat
+    implementation 'androidx.recyclerview:recyclerview:' + versions.recyclerview
 
     implementation 'com.jakewharton:butterknife:' + versions.butterKnife
     annotationProcessor 'com.jakewharton:butterknife-compiler:' + versions.butterKnife
